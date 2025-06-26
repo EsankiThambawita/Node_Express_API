@@ -9,5 +9,5 @@ app.use(bodyParser.json()); //Gonna use json data in the entire application
 
 //Listen to incoming requests
 app.listen(PORT, () =>
-  console.log(`server running on port: http://localhost${PORT}`)
+  console.log(`server running on port: http://localhost:${PORT}`)
 ); //callback function which is going to be executed once we run the server
