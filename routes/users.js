@@ -3,18 +3,8 @@ import { v4 as uuidv4 } from "uuid";
 
 const router = express.Router();
 
-const users = [
-  {
-    firstName: "John",
-    lastName: "Doe",
-    age: 25,
-  },
-  {
-    firstName: "Jane",
-    lastName: "Doe",
-    age: 24,
-  },
-];
+//mock database
+const users = [];
 
 //All routes here are starting with /users
 router.get("/", (req, res) => {
@@ -23,9 +13,15 @@ router.get("/", (req, res) => {
 
 router.post("/", (req, res) => {
   const user = req.body;
-  users.push(user);
+
+  //const userWithID = { ...user, id: uuidv4() };
+  users.push({ ...user, id: uuidv4() });
 
   res.send(`User with the name "${user.firstName}" added to the database.`);
+});
+
+router.get("/:id", (req, res) => {
+  res.send("The GET ID route");
 });
 
 export default router;
