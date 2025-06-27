@@ -10,9 +10,6 @@ import {
 
 const router = express.Router();
 
-//mock database
-let users = [];
-
 //All routes here are starting with /users
 router.get("/", getUsers);
 router.post("/", createUser);

@@ -1,3 +1,8 @@
+import { v4 as uuidv4 } from "uuid";
+
+//mock database
+let users = [];
+
 export const getUsers = (req, res) => {
   res.send(users);
 };
