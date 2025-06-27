@@ -18,7 +18,16 @@ A simple RESTful API built with **Node.js** and **Express.js** that allows you t
 
 ## 📁 Project Structure
 
-<pre lang="markdown"> ## 📁 Project Structure ``` Node_Express_API/ ├── index.js # Main server file ├── routes/ │ └── users.js # Route definitions for /users ├── Controllers/ │ └── users.js # Logic for handling user operations (controllers) ├── package.json # Project metadata and scripts └── README.md # Project documentation ``` </pre>
+```
+Node_Express_API/
+├── index.js # Main server file
+├── routes/
+│ └── users.js # Route definitions for /users
+├── Controllers/
+│ └── users.js # Controller logic for handling user operations
+├── package.json # Project metadata and scripts
+└── README.md # Project documentation
+```
 
 ## **How It Works**
 
